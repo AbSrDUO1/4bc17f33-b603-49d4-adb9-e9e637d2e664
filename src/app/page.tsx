@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: "futuristicAndOutOfBox", colorTemplate: 2, textAnimation: "slide" }}>
       <div id="nav" data-section="nav">
-        <NavbarStyleApple brand="Xeven Solutions" links={['#hero', '#about', '#how-to-buy', '#tokenomics', '#footer']} />
+        <NavbarStyleApple navItems={[{ name: 'Home', id: '#hero' }, { name: 'About', id: '#about' }, { name: 'How to Buy', id: '#how-to-buy' }, { name: 'Tokenomics', id: '#tokenomics' }, { name: 'Footer', id: '#footer' }]} logoSrc="/images/logo.svg" logoAlt="Xeven Solutions Logo" brandName="Xeven Solutions" />
       </div>
       <div id="hero" data-section="hero">
         <VoidHero title="Welcome to Xeven Solutions" description="Innovative solutions for your needs." tagLabel="Cutting Edge" primaryButtonText="Get Started" secondaryButtonText="Learn More" />
